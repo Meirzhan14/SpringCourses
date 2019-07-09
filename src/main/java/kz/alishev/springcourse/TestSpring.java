@@ -14,7 +14,6 @@ public class TestSpring {
         MusicPlayer classicalMusic = new MusicPlayer(music2);
         rockMusicPlayer.playMusic();
         classicalMusic.playMusic();
-
         context.close();
     }
 }
