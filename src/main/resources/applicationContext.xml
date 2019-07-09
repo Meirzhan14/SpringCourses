@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+>
+        <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+        <context:component-scan base-package="kz.alishev.springcourse"/>
+
+    <!--<bean id="music1Bean"-->
+          <!--class="kz.alishev.springcourse.RockMusic">-->
+    <!--</bean>-->
+    <!--<bean id="music2Bean"-->
+          <!--class="kz.alishev.springcourse.ClassicalMusic"-->
+          <!--factory-method="getClassicalMusic"-->
+    <!--&gt;-->
+    <!--</bean>-->
+    <!--<bean id="music3Bean"-->
+          <!--class="kz.alishev.springcourse.PopMusic">-->
+    <!--</bean>-->
+
+    <!--<bean id="musicPlayer"-->
+          <!--class="kz.alishev.springcourse.MusicPlayer"-->
+          <!--init-method="doMyInit"-->
+          <!--destroy-method="doMyDestroy"-->
+          <!--&gt;-->
+        <!--<property name="musicList">-->
+        <!--<list >-->
+            <!--<ref bean="music1Bean"/>-->
+            <!--<ref bean="music2Bean"/>-->
+            <!--<ref bean="music3Bean"/>-->
+        <!--</list>-->
+        <!--</property>-->
+
+        <!--&lt;!&ndash;<property name="name" value = "${musicPlayer.name}"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="volume" value="${musicPlayer.volume}"/>&ndash;&gt;-->
+
+    <!--</bean>-->
+</beans>
